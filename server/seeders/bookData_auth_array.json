@@ -1,0 +1,27 @@
+[
+    {
+        "authors": ["Colleen Hoover"],
+        "description": "The darkest thriller of the year",
+        "title": "Too Late",
+        "link": "https://www.booktopia.com.au/too-late-colleen-hoover/book/9781408729465.html"
+      },
+      {
+        "authors": ["Richard Harris", "Craig Challen"],
+        "description": "What we can learn from the world's leading risk-takers",
+        "title": "The Art of Risk",
+        "link": "https://www.booktopia.com.au/the-art-of-risk-richard-harris/book/9781761106774.html"
+      },
+      {
+        "authors": ["James Halliday"],
+        "description": "The bestselling and definite guide to australian wine",
+        "title": "Halliday Wine Companion 2024",
+        "link": "https://www.booktopia.com.au/halliday-wine-companion-2024-james-halliday/book/9781761450037.html"
+      },
+      {
+        "authors": ["Kate Grenville"],
+        "description": "A Biographical Novel",
+        "title": "Restless Dolly Maunder",
+        "link": "https://www.booktopia.com.au/restless-dolly-maunder-kate-grenville/book/9781922790330.html"
+      }
+
+]

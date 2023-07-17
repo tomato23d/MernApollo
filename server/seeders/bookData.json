@@ -1,0 +1,55 @@
+[
+    {
+        "bookId": "111122334a",
+        "authors": "Colleen Hoover",
+        "description": "The darkest thriller of the year",
+        "title": "Too Late",
+        "link": "https://www.booktopia.com.au/too-late-colleen-hoover/book/9781408729465.html"
+      },
+      {
+        "bookId": "111122334b",
+        "authors": "Richard Harris",
+        "description": "What we can learn from the world's leading risk-takers",
+        "title": "The Art of Risk",
+        "link": "https://www.booktopia.com.au/the-art-of-risk-richard-harris/book/9781761106774.html"
+      },
+      {
+        "bookId": "111122334c",
+        "authors": "James Halliday",
+        "description": "The bestselling and definite guide to australian wine",
+        "title": "Halliday Wine Companion 2024",
+        "link": "https://www.booktopia.com.au/halliday-wine-companion-2024-james-halliday/book/9781761450037.html"
+      },
+      {
+        "bookId": "111122334d",
+        "authors": "Kate Grenville",
+        "description": "A Biographical Novel",
+        "title": "Restless Dolly Maunder",
+        "link": "https://www.booktopia.com.au/restless-dolly-maunder-kate-grenville/book/9781922790330.html"
+      },
+
+      {
+        "bookId": "111122334e",
+        "authors": "Michael Bowden",
+        "description": "Textbook VCE Units 1-4",
+        "title": "Art Making and Exhibiting",
+        "link": "https://www.booktopia.com.au/art-making-and-exhibiting-vce-units-1-4-michael-bowden/book/9781009229555.html"
+      },
+
+      {
+        "bookId": "111122334f",
+        "authors": "Tim Rutherford-Johnson",
+        "description": "Oxford Paperback Reference",
+        "title": "The Oxford Dictionary of Music",
+        "link": "https://www.booktopia.com.au/the-oxford-dictionary-of-music-tim-rutherford-johnson/book/9780199578542.html"
+      },
+
+      {
+        "bookId": "111122334g",
+        "authors": "Bruce Pascoe",
+        "description": "A Truer History",
+        "title": "Young Dark Emu",
+        "link": "https://www.booktopia.com.au/young-dark-emu-bruce-pascoe/book/9781925360844.html"
+      }
+
+]

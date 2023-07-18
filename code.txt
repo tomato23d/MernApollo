@@ -24,32 +24,3 @@ const SearchBooks = () => {
 
 
 
-
-//changes///
-
-import BookList from '../components/BookList';
-
-
- <h2 className="card-header">
-        {profile.username} now reads those books:
-      </h2>
-
-       <p className="m-0" style={{ fontSize: '2.0rem', fontWeight: '800', 
-                                        paddingRight: '800px',
-                                        marginRight: '800px' }}>
-                hello world {hello.username}
-           </p>
-
-
-   <button className="btn btn-primary">
-                              <BookDetail key={book._id} book={book} />
-                              Book Detail
-                      </button>
-
-    me: async (parent, args, context) => {
-        if (context.user){
-        const user = await User.findOne({_id: context.user._id})
-        return user;
-    }
-        throw new AuthenticationError("user is not found");
-    },},

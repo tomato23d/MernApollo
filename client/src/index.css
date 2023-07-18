@@ -1768,3 +1768,8 @@ label form [type='radio'] {
   font-size: var(--font-body);
 
 }
+
+span { 
+  font-style: italic;
+  font-size: 2.0rem;
+}

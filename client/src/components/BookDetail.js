@@ -7,8 +7,8 @@ import { QUERY_SINGLE_BOOK } from '../utils/queries';
 
 const BookDetail = () => {
 const { book_id } = useParams();
-const { loading, data } = useQuery(QUERY_SINGLE_BOOK, 
-  {variables:  { _id: book_id }} );
+const { data } = useQuery(QUERY_SINGLE_BOOK, 
+  {variables:  { id: book_id }} );
 
   const book = data?.book || data?.book || {};
  console.log(data);

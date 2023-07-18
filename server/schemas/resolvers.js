@@ -10,16 +10,13 @@ const resolvers = {
     },
 
     book: async (parent, args) => {
-        return await Book.findById(args._id)
+        return await Book.findById(args.id)
     },
 
     users: async () => {
       return await User.find({}).populate('book');
   },
 
-  // user: async (parent, args) => {
-  //     return await User.findById(args.id)
-  // },
     user: async (parent, { userId }) => {
       return await User.findOne({_id: userId})
   },

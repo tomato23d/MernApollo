@@ -23,14 +23,7 @@ const BookList = ({ books, title }) => {
                       <p className="card-text">Description: {book.description}</p>
                    
                       <button className="btn btn-primary">
-                              {/* <BookDetail key={book._id} book={book} />
-                              Book Detail */}
-                              <a href={`/books/${book._id}`}>open book</a>
-                      </button>
-
-
-                      <button className="btn btn-primary" >
-                              Test Button
+                              <a href={`/books/${book._id}`}>Book Detail</a>
                       </button>
 
                       <button className="btn btn-primary" >

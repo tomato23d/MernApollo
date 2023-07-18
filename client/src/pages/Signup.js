@@ -31,12 +31,6 @@ const Signup = () => {
       console.error(e);
     }
   };
-
-  
-  
-  
-  
-  
   
   return (
     <main className="flex-row justify-center mb-4">

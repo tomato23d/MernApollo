@@ -8,8 +8,6 @@ import Auth from '../utils/auth';
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   
-  
-  
   const [login, { error, data }] = useMutation(LOGIN_USER);
 
  const handleChange = (event) => {
@@ -47,7 +45,7 @@ setFormState({...formState, [name]: value, });
             {data ? (
               <p>
                 Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
+                <Link to="/me">back to the homepage.</Link>
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>

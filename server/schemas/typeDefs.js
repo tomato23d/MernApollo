@@ -40,7 +40,7 @@ const typeDefs = gql`
     books: [Book]!
     book(_id: ID!) : Book
     users: [User]!
-    user(_id: ID!) : User
+    user(userId: ID!) : User
 
   }
 

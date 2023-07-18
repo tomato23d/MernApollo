@@ -33,7 +33,7 @@ export const QUERY_ME = gql`
     me {
       _id
       username
-      books
+      savedBooks
     }
   }
 `;
@@ -51,8 +51,8 @@ export const QUERY_USERS = gql`
 `;
 
 export const QUERY_USER = gql`
-  query singleUser($id: ID!) {
-    user(id: $id) {
+  query singleUser($userId: ID!) {
+    user(userId: $userId) {
       _id
       username
       email

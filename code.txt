@@ -1,38 +1,41 @@
-import React from 'react';
-import { useQuery } from '@apollo/client';
-import Display from '../components/Display';
+#40 SearchBooks
+
+
+const SearchBooks = () => {
+ 
+//books
+  const [searchedBooks, setSearchedBooks] = useState([]);
+
+
+//search field data
+  const [searchInput, setSearchInput] = useState('');
+
+// create state to hold saved bookId values
+  const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
+
+ onChange={(e) => setSearchInput(e.target.value)}
+
+
+
+#40 SavedBooks
+
+  {userData.savedBooks.map((book) => {
+            return (
+
+
+
+
+//changes///
+
 import BookList from '../components/BookList';
-import { QUERY_BOOKS } from '../utils/queries';
-
-const Home = () => {
-
-  const { loading, data } = useQuery(QUERY_BOOKS);
-  const books = data?.books || [];
 
 
-  return (
-    <main>
-      <div className="flex-row justify-center">
-        <div className="col-12 col-md-10 my-3">
-        {loading ? (
-            <div>Loading...</div>
-          ) : (
-               <Display/>   
-          )} 
-        </div>
-   
-      </div>
+ <h2 className="card-header">
+        {profile.username} now reads those books:
+      </h2>
 
-    <div>
-      <BookList 
-      books={books}/>
-    </div>
-
-
-    </main>
-  );
-};
-
-export default Home;
-//////////////////////
-import Display from '../components/Display';
+       <p className="m-0" style={{ fontSize: '2.0rem', fontWeight: '800', 
+                                        paddingRight: '800px',
+                                        marginRight: '800px' }}>
+                hello world {hello.username}
+           </p>

@@ -1759,3 +1759,12 @@ label form [type='radio'] {
     border-radius: 0.3rem;
     
 }
+
+.aside-left {
+  float: left;
+  padding: var(--padding-normal);
+  margin-left:var(--margin-left);
+  margin-top: 185px;
+  font-size: var(--font-body);
+
+}

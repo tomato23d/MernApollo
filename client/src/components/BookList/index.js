@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../index.css';
+import myimage from '../BookList';
 
 const BookList = ({ books, title }) => {
   if (!books.length) {
@@ -18,9 +19,16 @@ const BookList = ({ books, title }) => {
 
                   <section className="cardbook" key={book._id}>     
                       <h5 className="card-title">{book.title} </h5>
+                      <img className="picture" src={myimage} alt="b" />
                       <h6 className="card-title">By: {book.authors} </h6>
                       <p className="card-text">Description: {book.description}</p>
-                     
+                      <a href={book.link} className="btn btn-primary">
+                          Find More
+                      </a>
+                    
+                      <a href='https://google.com' className="btn btn-primary">
+                          Save to Wishlist
+                      </a>
                   </section>
               
               </div>

@@ -1,13 +1,14 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
 
-import BookList from '../components/BookList/index';
+import BookList from '../components/BookList';
 import { QUERY_BOOKS } from '../utils/queries';
 
 const Home = () => {
 
   const { loading, data } = useQuery(QUERY_BOOKS);
   const books = data?.books || [];
+
 console.log(books);
 
   return (
@@ -19,14 +20,11 @@ console.log(books);
           ) : (
             <BookList
               books={books}
-              title="Here's the current roster of friends..."
+              title="Here are the books to read"
             />
           )}
         </div>
       </div>
-
-
-
     </main>
   );
 };

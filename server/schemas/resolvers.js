@@ -10,7 +10,7 @@ const resolvers = {
     },
 
     book: async (parent, args) => {
-        return await Book.findById(args.id)
+        return await Book.findById(args._id)
     },
 
     users: async () => {
@@ -28,7 +28,7 @@ const resolvers = {
 
     me: async (parent, args, context) => {
         if (context.user){
-        const user = User.findOne({_id: context.user_id})
+        const user = await User.findOne({_id: context.user._id})
         return user;
     }
         throw new AuthenticationError("user is not found");

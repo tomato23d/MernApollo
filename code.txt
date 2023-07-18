@@ -39,3 +39,17 @@ import BookList from '../components/BookList';
                                         marginRight: '800px' }}>
                 hello world {hello.username}
            </p>
+
+
+   <button className="btn btn-primary">
+                              <BookDetail key={book._id} book={book} />
+                              Book Detail
+                      </button>
+
+    me: async (parent, args, context) => {
+        if (context.user){
+        const user = await User.findOne({_id: context.user._id})
+        return user;
+    }
+        throw new AuthenticationError("user is not found");
+    },},

@@ -1,12 +1,17 @@
 import React from 'react';
 import '../index.css';
 //import myimage from '../BookList';
-//import { useQuery } from '@apollo/client';
+import { useQuery } from '@apollo/client';
+import { useParams } from 'react-router-dom';
+import { QUERY_SINGLE_BOOK } from '../utils/queries';
 
-//import { QUERY_SINGLE_BOOK } from '../utils/queries';
+const BookDetail = () => {
+const { book_id } = useParams();
+const { loading, data } = useQuery(QUERY_SINGLE_BOOK, 
+  {variables:  { _id: book_id }} );
 
-const BookDetail = ({ book }) => {
- console.log(book);
+  const book = data?.book || data?.book || {};
+ console.log(data);
   return (
     <div>
       

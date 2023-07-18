@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Auth from '../utils/auth';
-import { useParams } from 'react-router-dom';
+//import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { QUERY_USER } from '../utils/queries';
+import { QUERY_ME } from '../utils/queries';
 
 const Header = () => {
   const logout = (event) => {
@@ -12,12 +12,11 @@ const Header = () => {
     Auth.logout();
   };
 
-const { userId } = useParams();
-const { loading, data } = useQuery( QUERY_USER, {variables: { userId: userId }
-});
+//const { userId } = useParams();
+const { loading, data } = useQuery( QUERY_ME );
 
-const profile = data?.profile || {};
-console.log(profile);
+const profile = data?.me || {};
+console.log(profile.me);
 
 
 if (loading) {

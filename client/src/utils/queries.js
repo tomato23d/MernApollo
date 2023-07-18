@@ -29,11 +29,19 @@ export const QUERY_SINGLE_BOOK = gql`
 `;
 
 export const QUERY_ME = gql`
-  query me {
+  {
     me {
       _id
       username
-      savedBooks
+      email
+      savedBooks {
+        bookId
+        authors
+        description
+        title
+        link
+        image
+      }
     }
   }
 `;
@@ -51,8 +59,8 @@ export const QUERY_USERS = gql`
 `;
 
 export const QUERY_USER = gql`
-  query singleUser($userId: ID!) {
-    user(userId: $userId) {
+  query singleUser {
+    user {
       _id
       username
       email

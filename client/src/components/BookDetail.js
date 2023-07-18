@@ -1,15 +1,15 @@
 import React from 'react';
-import '../../index.css';
+import '../index.css';
 //import myimage from '../BookList';
-import { useQuery } from '@apollo/client';
+//import { useQuery } from '@apollo/client';
 
-import { QUERY_SINGLE_BOOK } from '../utils/queries';
+//import { QUERY_SINGLE_BOOK } from '../utils/queries';
 
-const BookDetail = ({ bookId }) => {
- 
+const BookDetail = ({ book }) => {
+ console.log(book);
   return (
     <div>
-       <h3 className="text-primary">{title}</h3>
+      
       <div className="flex-row justify-space-between my-4">
        
             <div  className="col-12 col-xl-6">
@@ -17,16 +17,15 @@ const BookDetail = ({ bookId }) => {
                 
 
                   <section className="cardbook" >     
-                      <h5 className="card-title">{title} </h5>
+                      <h5 className="card-title">{book.title} </h5>
                      
-                      <h6 className="card-title">By: {authors} </h6>
-                      <p className="card-text">Description: {description}</p>
+                      <h6 className="card-title">By: {book.authors} </h6>
+                      <p className="card-text">Description: {book.description}</p>
                       <p className="card-text">View Price</p>
                   </section>
               
               </div>
             </div>
-          ))}
       </div>
     </div>
   );

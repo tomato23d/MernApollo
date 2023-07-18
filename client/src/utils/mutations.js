@@ -2,8 +2,8 @@ import { gql } from '@apollo/client';
 
 
 export const SAVE_BOOK = gql`
-mutation saveBook( $_id: ID!, $authors: [String], $description: String!, $title: String!) {
-  saveBook(_id: $id, authors: $authors, description: $description, title: $title){
+mutation saveBook( $_id: ID!, $bookId: String!) {
+  saveBook(_id: $_id, bookId: $bookId){
     
     _id
     bookId

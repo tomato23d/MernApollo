@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../index.css';
 import myimage from '../BookList';
+import BookDetail from '../BookDetail';
 
 const BookList = ({ books, title }) => {
   if (!books.length) {
@@ -15,22 +16,24 @@ const BookList = ({ books, title }) => {
           books.map((book) => (
             <div key={book} className="col-12 col-xl-6">
               <div className="card mb-3">
-                
-
                   <section className="cardbook" key={book._id}>     
                       <h5 className="card-title">{book.title} </h5>
                       <img className="picture" src={myimage} alt="b" />
                       <h6 className="card-title">By: {book.authors} </h6>
                       <p className="card-text">Description: {book.description}</p>
-                      <a href={book.link} className="btn btn-primary">
-                          Details
-                      </a>
-                    
-                      <a href='https://google.com' className="btn btn-primary">
-                          Save to Wishlist
-                      </a>
+                      <button className="btn btn-primary">
+                              <BookDetail key={book._id} book={book} />
+                              Book Detail
+                      </button>
+
+                      <button className="btn btn-primary" >
+                              Test Button
+                      </button>
+
+                      <button className="btn btn-primary" >
+                              Save to Wishlist
+                      </button>
                   </section>
-              
               </div>
             </div>
           ))}

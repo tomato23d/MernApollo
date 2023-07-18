@@ -23,9 +23,11 @@ const Welcome = () => {
   return (
     <main>
   
-   <aside className="aside-left">
-   <p className="m-0" style={{ fontSize: '1.7rem', fontWeight: '650' }}>
+   <aside className="aside-left mainbook">
+   <p className="m-0" style={{ fontSize: '1.0rem', fontWeight: '650',
+                                width: '30%' }}>
       My Wishlist
+      publish me.savedBooks.title here
     </p>
       </aside>
       <div className="flex-row justify-center">

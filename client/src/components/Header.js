@@ -39,6 +39,7 @@ if (loading) {
             <h2 className="card-header">
         {profile.username} print here user name
       </h2>
+      
             <button className="btn btn-lg btn-light m-2" onClick={logout}>
               Logout
             </button></div>

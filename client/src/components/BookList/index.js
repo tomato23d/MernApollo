@@ -23,7 +23,7 @@ const BookList = ({ books, title }) => {
                       <h6 className="card-title">By: {book.authors} </h6>
                       <p className="card-text">Description: {book.description}</p>
                       <a href={book.link} className="btn btn-primary">
-                          Find More
+                          Details
                       </a>
                     
                       <a href='https://google.com' className="btn btn-primary">

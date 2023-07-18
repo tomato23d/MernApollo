@@ -20,7 +20,7 @@ console.log(books);
           ) : (
             <BookList
               books={books}
-              title="Here are the books to read"
+              title="Here are the books"
             />
           )}
         </div>

@@ -34,6 +34,8 @@ setFormState({...formState, [name]: value, });
       email: '',
       password: '',
     });
+
+    window.location.assign('/me');
   };
 
   return (

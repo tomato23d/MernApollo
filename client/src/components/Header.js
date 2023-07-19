@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Auth from '../utils/auth';
-//import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_ME } from '../utils/queries';
 
@@ -12,16 +11,15 @@ const Header = () => {
     Auth.logout();
   };
 
-//const { userId } = useParams();
 const { loading, data } = useQuery( QUERY_ME );
 
 const profile = data?.me || {};
-console.log(profile.me);
 
+console.log(Auth.loggedIn());
 
-if (loading) {
-  return <div>Loading...</div>;
-}
+// if (loading) {
+//   return <div>Loading...</div>;
+// }
   return (
     <header className="bg-info text-dark mb-4 py-3 display-flex align-center">
       <div className="container flex-column justify-space-between-lg justify-center align-center text-center">

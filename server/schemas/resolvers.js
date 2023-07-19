@@ -35,8 +35,9 @@ const resolvers = {
   Mutation: {
     saveBook: async (parent, { bookData }, context) => {
         if (context.user){
+          console.log(context.user);
         return await User.findByIdAndUpdate(
-        { _id: context.user_id},
+        { _id: context.user._id},
         {$push: {savedBooks: bookData}},
         {new: true}
       );}

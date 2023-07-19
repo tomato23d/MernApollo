@@ -26,7 +26,9 @@ const { data } = useQuery(QUERY_SINGLE_BOOK,
                      
                       <h6 className="card-title">By: {book.authors} </h6>
                       <p className="card-text">Description: {book.description}</p>
-                      <p className="card-text">View Price</p>
+                      <button className="btn btn-light" >
+                        <a href={book.link}>Buy</a>
+                      </button>
                   </section>
               
               </div>

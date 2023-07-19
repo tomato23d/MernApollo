@@ -14,3 +14,6 @@ when button "Remove" (from Wishlist) is clicked, the book to be removed from the
 
 no tests as yet
 
+### test an array of authors
+
+### publish image

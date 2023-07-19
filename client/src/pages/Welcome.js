@@ -16,9 +16,11 @@ const Welcome = () => {
 
   const { loading, data } = useQuery(QUERY_BOOKS);
   const books = data?.books || [];
-
   console.log(books);
 
+  const { savedBooks } = useQuery(QUERY_ME);
+  const myBooks = savedBooks?.myBooks || [];
+  console.log(myBooks);
 
   return (
     <main>
@@ -27,7 +29,7 @@ const Welcome = () => {
    <p className="m-0" style={{ fontSize: '1.0rem', fontWeight: '650',
                                 width: '30%' }}>
       My Wishlist
-      publish me.savedBooks.title here
+      publish myBooks.savedBooks
     </p>
       </aside>
       <div className="flex-row justify-center">

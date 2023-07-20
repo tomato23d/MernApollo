@@ -5,6 +5,7 @@ import { useQuery } from '@apollo/client';
 
 import { QUERY_ME, QUERY_USER, QUERY_BOOKS } from '../utils/queries';
 import BookList from '../components/BookList';
+import WishList from '../components/WishList';
 
 
 const Welcome = () => {
@@ -19,7 +20,7 @@ const Welcome = () => {
   console.log(books);
 
   const { savedBooks } = useQuery(QUERY_ME);
-  const myBooks = savedBooks?.myBooks || [];
+  const myBooks = savedBooks?.savedBooks || [];
   console.log(myBooks);
 
   return (
@@ -29,8 +30,10 @@ const Welcome = () => {
    <p className="m-0" style={{ fontSize: '1.0rem', fontWeight: '650',
                                 width: '30%' }}>
       My Wishlist
-      publish myBooks.savedBooks
     </p>
+            <WishList
+              books={books.savedBooks}
+            />
       </aside>
       <div className="flex-row justify-center">
         <div className="col-12 col-md-10 my-3">

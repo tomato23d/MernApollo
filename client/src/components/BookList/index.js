@@ -14,20 +14,6 @@ const BookList = ({ books, title }) => {
 
 const [saveBook, { error }] = useMutation(SAVE_BOOK);
   
-
-//   // set user id for logged user 
-//   const { userId } = useParams();
-
-//   const { loading, data } = useQuery( QUERY_ME, { variables: { _id: userId } } );
-
-//   // {profile._id} is logged user id
-//   const profile = data?.me || {};
-
-
-// // use mutation to save the book into the logged user account 
-
-
-
   const handleSaveBook = async (book) => {
     try {
       console.log(book);

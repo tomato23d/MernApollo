@@ -16,6 +16,7 @@ import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BookDetail from './components/BookDetail';
+import WishList from './components/WishList';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -74,7 +75,10 @@ function App() {
                 path="/books/:book_id" 
                 element={<BookDetail />} 
               />
-
+              <Route 
+                path="/users/:userId/books" 
+                element={<WishList />} 
+              />
              
             </Routes>
           </div>

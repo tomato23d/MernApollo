@@ -18,14 +18,14 @@ const resolvers = {
   },
 
     user: async (parent, { userId }) => {
-      return await User.findOne({_id: userId})
+      return await User.findOne({_id: userId}).populate('books');
   },
 
 
 
     me: async (parent, args, context) => {
         if (context.user){
-        const user = await User.findOne({_id: context.user._id})
+        const user = await User.findOne({_id: context.user._id}).populate('savedBooks')
         return user;
     }
         throw new AuthenticationError("user is not found");

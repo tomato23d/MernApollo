@@ -19,9 +19,9 @@ const Welcome = () => {
   const books = data?.books || [];
   console.log(books);
 
-  const { savedBooks } = useQuery(QUERY_ME);
+  const { loadingMe, savedBooks } = useQuery(QUERY_ME);
   const myBooks = savedBooks?.savedBooks || [];
-  console.log(myBooks);
+  //console.log(myBooks);
 
   return (
     <main>
@@ -32,7 +32,7 @@ const Welcome = () => {
       My Wishlist
     </p>
             <WishList
-              books={books.savedBooks}
+              books={myBooks}
             />
       </aside>
       <div className="flex-row justify-center">

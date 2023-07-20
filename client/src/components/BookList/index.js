@@ -2,12 +2,10 @@ import React from 'react';
 import '../../index.css';
 import myimage from '../BookList';
 import Auth from '../../utils/auth';
-import { QUERY_ME } from '../../utils/queries';
+//import { QUERY_ME } from '../../utils/queries';
 import { SAVE_BOOK } from '../../utils/mutations';
 import { useQuery, useMutation } from '@apollo/client';
-import { useParams } from 'react-router-dom';
-
-//import BookDetail from '../BookDetail';
+//import { useParams } from 'react-router-dom';
 
 
 const BookList = ({ books, title }) => {
@@ -21,12 +19,13 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
         variables: { bookData: {
           _id: book._id,
           bookId: book.bookId ,
-    authors: book.authors,
-    description: book.description,
-    title: book.title,
+          authors: book.authors,
+          description: book.description,
+          title: book.title,
 
         } },
       });
+      {alert ("the book has been added to your wishlist")}     
     } catch (err) {
       console.error(err);
     }

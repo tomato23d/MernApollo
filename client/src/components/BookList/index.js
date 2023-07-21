@@ -48,8 +48,8 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
 
 )}
 
- 
-      <div className="flex-row justify-space-between my-4">
+<div className="flex-row justify-space-between my-4">
+    
         {books &&
           books.map((book) => (
             <div key={book} className="col-12 col-xl-6">
@@ -73,7 +73,7 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
 
 
                   </section>
-              </div>
+                  </div>
             </div>
           ))}
       </div>

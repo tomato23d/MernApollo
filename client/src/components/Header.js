@@ -15,7 +15,7 @@ const { loading, data } = useQuery( QUERY_ME );
 
 const profile = data?.me || {};
 
-console.log(Auth.loggedIn());
+//console.log(Auth.loggedIn());
 
 // if (loading) {
 //   return <div>Loading...</div>;

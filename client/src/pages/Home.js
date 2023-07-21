@@ -9,7 +9,7 @@ const Home = () => {
   const { loading, data } = useQuery(QUERY_BOOKS);
   const books = data?.books || [];
 
-console.log(books);
+//console.log(books);
 
   return (
     <main>

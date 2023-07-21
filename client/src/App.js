@@ -76,7 +76,7 @@ function App() {
                 element={<BookDetail />} 
               />
               <Route 
-                path="/users/:userId/books" 
+                path="/users/:userId/wishlist" 
                 element={<WishList />} 
               />
              

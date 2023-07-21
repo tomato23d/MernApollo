@@ -1,17 +1,7 @@
 import React from 'react';
 
 
-
-const WishList = ({ mySavedBooks }) => {
-    console.log(mySavedBooks);
-   const renderedList = mySavedBooks.map((item) => {
-    return <wLItem key={item.id} item={item} />;
-  });
-
-  return <div>{renderedList}</div>;
-};
-
-const wLItem = ({ item }) => {
+const WishItem = ({ item }) => {
   return (
     <div className="item">
       <div className="content">
@@ -31,4 +21,4 @@ const wLItem = ({ item }) => {
   );
 };
 
-export default wLItem;
+export default WishItem;

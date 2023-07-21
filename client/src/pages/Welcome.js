@@ -1,27 +1,26 @@
 import React from 'react';
 
-import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import { QUERY_ME, QUERY_USER, QUERY_BOOKS } from '../utils/queries';
+import { QUERY_ME, QUERY_BOOKS } from '../utils/queries';
 import BookList from '../components/BookList';
-import WishList from '../components/WishList';
+import WishItem from '../components/WishList';
 
 
 const Welcome = () => {
-  // const { userId } = useParams();
-  // const { loading, data } = useQuery(
-  //   userId ? QUERY_USER : QUERY_ME, {variables:  { _id: userId }, });
-
-  // const profile = data?.profile || data?.me || {};
-
   const { loading, data } = useQuery(QUERY_BOOKS);
   const books = data?.books || [];
   console.log(books);
 
-  const { loadingMe, savedBooks } = useQuery(QUERY_ME);
-  const myBooks = savedBooks?.savedBooks || [];
-  //console.log(myBooks);
+  const { loading: loadingMe, data: dataMe } = useQuery(QUERY_ME);
+  const mySavedBooks = dataMe?.me.savedBooks || [];
+  console.log(mySavedBooks);
+
+ 
+    const renderWishList = mySavedBooks.map((item) =>{
+      return <WishItem key={item.id} item={item}/>;
+    });
+
 
   return (
     <main>
@@ -31,9 +30,9 @@ const Welcome = () => {
                                 width: '30%' }}>
       My Wishlist
     </p>
-            <WishList
-              books={myBooks}
-            />
+      <div>{renderWishList}</div>
+
+            
       </aside>
       <div className="flex-row justify-center">
         <div className="col-12 col-md-10 my-3">

@@ -1773,3 +1773,8 @@ span {
   font-style: italic;
   font-size: 2.0rem;
 }
+
+.icon1:hover {
+    opacity: 80%;
+    color: purple;
+}

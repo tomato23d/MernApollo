@@ -4,7 +4,8 @@ import { useQuery } from '@apollo/client';
 
 import { QUERY_ME, QUERY_BOOKS } from '../utils/queries';
 import BookList from '../components/BookList';
-import WishItem from '../components/WishList';
+//import WishList from '../components/WishList';
+import WishItem from '../components/WishItem';
 
 
 const Welcome = () => {
@@ -30,8 +31,11 @@ const Welcome = () => {
                                 width: '30%' }}>
       My Wishlist
     </p>
-      <div>{renderWishList}</div>
-
+    
+     <div>{renderWishList}</div>
+     {/* <div>
+      <WishList mySavedBooks={mySavedBooks} />
+     </div> */}
             
       </aside>
       <div className="flex-row justify-center">

@@ -1,34 +1,19 @@
 import React from 'react';
+import WishItem from '../components/WishList';
 
 
 
 const WishList = ({ mySavedBooks }) => {
-    console.log(mySavedBooks);
-   const renderedList = mySavedBooks.map((item) => {
-    return <wLItem key={item.id} item={item} />;
-  });
+    //console.log(mySavedBooks);
+    const renderWishList = mySavedBooks.map((item) =>{
+      return <WishItem key={item.id} item={item}/>;
+    });
 
-  return <div>{renderedList}</div>;
-};
 
-const wLItem = ({ item }) => {
   return (
-    <div className="item">
-      <div className="content">
-        <a
-          className="header"
-          href={item.html_url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {item.title}
-        </a>
-        <div className="description">{item.description}</div>
-        <button>Detail</button>
-        <button>Remove from Wishlist</button>
-      </div>
-    </div>
+    <div>{renderWishList}</div>
+
   );
 };
 
-export default wLItem;
+export default WishList;

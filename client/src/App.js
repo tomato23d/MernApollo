@@ -75,6 +75,10 @@ function App() {
                 path="/books/:book_id" 
                 element={<BookDetail />} 
               />
+               <Route 
+                path="/books/:bookId" 
+                element={<BookDetail />} 
+              />
               <Route 
                 path="/users/:userId/wishlist" 
                 element={<WishList />} 

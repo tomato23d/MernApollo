@@ -15,3 +15,11 @@ no tests as yet
 
 ### update wishlist styling
 
+## need advice
+
+### alternative route for book detail:
+     path="/books/:book_id"  or  path="/books/:bookId" 
+     require for savedBooks which miss _id
+
+     + need to investigate "/books/:bookId" for rendering details from WishItem
+

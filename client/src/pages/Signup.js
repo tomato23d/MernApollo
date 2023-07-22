@@ -81,7 +81,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-      <div className = 'main'>
+      {/* <div className = 'main'>
         <h1 className = 'page-title'> Please contact me</h1>
       
         <form className = "new-form">
@@ -109,7 +109,7 @@ const Signup = () => {
                 <button type="submit" className="form-button" >
                       SUBMIT
                 </button>
-                </div>
+                </div> */}
     </main>
   );
 };

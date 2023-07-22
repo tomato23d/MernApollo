@@ -79,10 +79,10 @@ function App() {
                 path="/books/:bookId" 
                 element={<BookDetail />} 
               />
-              <Route 
+              {/* <Route 
                 path="/users/:userId/wishlist" 
                 element={<WishList />} 
-              />
+              /> */}
              
             </Routes>
           </div>

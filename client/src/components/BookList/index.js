@@ -1,6 +1,7 @@
 import React from 'react';
+//import '../BookList/booklist.css';
 import '../../index.css';
-import myimage from '../BookList';
+import myimage from '../BookList/image-5.png';
 import Auth from '../../utils/auth';
 //import { QUERY_ME } from '../../utils/queries';
 import { SAVE_BOOK } from '../../utils/mutations';

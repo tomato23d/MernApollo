@@ -11,7 +11,6 @@ no tests as yet
 
 ### test an array of authors
 
-### publish image
 
 ### update wishlist styling
 
@@ -22,4 +21,6 @@ no tests as yet
      require for savedBooks which miss _id
 
      + need to investigate "/books/:bookId" for rendering details from WishItem
+
+### image storage
 

@@ -15,27 +15,18 @@ const { data } = useQuery(QUERY_SINGLE_BOOK,
   return (
     <div>
           <div className="container"> 
-       
-       <div  className="cardbook">
-        
-         <img className="picture" src={imagedetail} alt="b" />
-
-            
-                 <h3 className="card-title">{book.title} </h3>
-                
-                 <h5 className="card-title">By: {book.authors} </h5>
-                 <h6 className="card-text">Description: {book.description}</h6>
-                 <button className="btn btn-light" >
-                   <a href={book.link}>Buy</a>
-                 </button>
-           
-         
-     
-        </div> 
- </div>
- 
-      
-      </div>
+              <div  className="cardbook">
+                     <img className="picture" src={imagedetail} alt="b" />
+                     <h3 className="card-title">{book.title} </h3>
+                     <h5 className="card-title">By: {book.authors} </h5>
+                     <h6 className="card-text">Description: {book.description}</h6>
+                 
+                    <button className="btn btn-light" >
+                        <a href={book.link}>Buy</a>
+                    </button>
+              </div> 
+          </div> 
+    </div>
   );
 };
 

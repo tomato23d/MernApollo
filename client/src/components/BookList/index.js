@@ -38,7 +38,6 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
   return (
     <div>
     <h3 className="text-primary">{title}</h3>  
-       
     {Auth.loggedIn() ? (
 
 <h4 className="text-primary"> Enjoy our selection </h4>
@@ -62,7 +61,6 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
                   {/* <section className="cardbook" key={book.book_id}>    */}
                  
                       <h5 className="card-title">{book.title} </h5>
-                    
                       <h6 className="card-title">By: {book.authors} </h6>
                       <p className="card-text">Description: {book.description}</p>
                      

@@ -9,7 +9,7 @@ const WishItem = ({ item }) => {
 
         <h6 className="icon1">  ❤️ </h6>
         <h5>{item.title} by {item.authors}</h5>
-        
+        <h5> {item._id} </h5>
         <h6>{item.description}</h6>
         <button className="btn btn-light">
             <a href={`/books/${item.bookId}`} target="_blank">View</a>

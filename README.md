@@ -3,20 +3,15 @@
 ## Outstanding issues
 
 
-### expected behaviour #4:
+### wishlist Remove button
+unable to test in graphql
 
-when button "Remove" (from Wishlist) is clicked, the book to be removed from the savedBooks array on User model
+### wishlist View detail button
+missing book object id to retrieve Book Detail page
+attempted to define double path on app.js:
+path="/books/:book_id"  or  path="/books/:bookId" 
 
-no tests as yet
-
-
-## need advice
-
-### alternative route for book detail:
-     path="/books/:book_id"  or  path="/books/:bookId" 
-     require for savedBooks which miss _id
-
-     + need to investigate "/books/:bookId" for rendering details from WishItem
 
 ### image storage
+currently saved in a folder with index.js
 

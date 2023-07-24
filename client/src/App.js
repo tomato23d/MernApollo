@@ -16,7 +16,7 @@ import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BookDetail from './components/BookDetail';
-import WishList from './components/WishList';
+//import WishList from './components/WishList';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -47,7 +47,7 @@ function App() {
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
-          <div className="container">
+          {/* <div className="container"> */}
             <Routes>
            
               <Route 
@@ -87,7 +87,7 @@ function App() {
             </Routes>
           </div>
           <Footer />
-        </div>
+        {/* </div> */}
       </Router>
     </ApolloProvider>
   );

@@ -39,6 +39,7 @@ setFormState({...formState, [name]: value, });
   };
 
   return (
+    <div className="container">
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
         <div className="card">
@@ -87,6 +88,7 @@ setFormState({...formState, [name]: value, });
         </div>
       </div>
     </main>
+    </div>
   );
 };
 

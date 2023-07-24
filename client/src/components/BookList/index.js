@@ -26,7 +26,8 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
 
         } },
       });
-      {alert ("the book has been added to your wishlist")}     
+      {alert ("the book has been added to your wishlist")} ;
+      window.location.reload();    
     } catch (err) {
       console.error(err);
     }
@@ -54,14 +55,17 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
         {books &&
           books.map((book) => (
             <div key={book} className="col-12 col-xl-6">
-              <div className="card mb-3">
-                  <section className="cardbook" key={book.book_id}>     
+              <div className="cardbook">
+              <aside>
+                  <img className="picture" src={myimage} alt="b" />
+                    </aside>  
+                  {/* <section className="cardbook" key={book.book_id}>    */}
+                 
                       <h5 className="card-title">{book.title} </h5>
-                      <img className="picture" src={myimage} alt="b" />
+                    
                       <h6 className="card-title">By: {book.authors} </h6>
                       <p className="card-text">Description: {book.description}</p>
                      
-                   
                       <button className="btn btn-primary">
                               <a href={`/books/${book._id}`} target="_blank">Book Detail</a>
                       </button>
@@ -70,10 +74,8 @@ const [saveBook, { error }] = useMutation(SAVE_BOOK);
                          onClick={() => handleSaveBook(book)}  >
                               Save to Wishlist
                       </button>
-                
 
-
-                  </section>
+                  {/* </section> */}
                   </div>
             </div>
           ))}

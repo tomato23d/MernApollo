@@ -21,6 +21,10 @@ const resolvers = {
       return await User.findOne({_id: userId}).populate('books');
   },
 
+//   userbook: async (parent, { userId, bookId }) => {
+//     return await User.findOne({_id: userId}).populate('books', {id: bookId});
+// },
+
 
 
     me: async (parent, args, context) => {
@@ -29,7 +33,16 @@ const resolvers = {
         return user;
     }
         throw new AuthenticationError("user is not found");
-    },},
+    },
+  //   mesavedBooks: async (parent, args, context) => {
+  //     if (context.user){
+  //     const user = await User.findOne({_id: context.user._id}).populate('savedBooks', {id: bookId})
+  //     return user;
+  // }
+  //     throw new AuthenticationError("user is not found");
+  // },
+
+  },
   
 
   Mutation: {
@@ -45,11 +58,11 @@ const resolvers = {
        throw new AuthenticationError('You need to be logged in!');
   },
 
-    removeBook: async (parent, { bookId }, context) => {
+    removeBook: async (parent, { _id }, context) => {
         if (context.user){
         return await User.findByIdAndUpdate(
         { _id: context.user_id },
-        {$pull: {savedBooks: req.params.bookId}},
+        {$pull: {savedBooks: _id}},
         {new: true}
       );}
 

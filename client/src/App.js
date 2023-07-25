@@ -77,7 +77,7 @@ function App() {
                 element={<BookDetail />} 
               />
                <Route 
-                path="/books/:bookId" 
+                path="/users/:userId/:bookId" 
                 element={<HelloBook />} 
               />
               {/* <Route 

@@ -5,7 +5,8 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ME, QUERY_BOOKS } from '../utils/queries';
 import BookList from '../components/BookList';
 
-import WishItem from '../components/WishItem';
+import WishItemLine from '../components/WishItemLine';
+import HelloBook from '../components/HelloBook';
 
 
 const Welcome = () => {
@@ -19,8 +20,9 @@ const Welcome = () => {
 
  
     const renderWishList = mySavedBooks.map((item) =>{
-      return <WishItem key={item.id} item={item}/>;
+      return <WishItemLine key={item._id} item={item}/>;
     });
+
 
 
   return (

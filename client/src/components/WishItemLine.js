@@ -3,6 +3,7 @@ import '../index.css';
 
 
 const WishItem = ({ item }) => {
+  console.log(item);
   return (
     <div className="item">
       <div className="content">
@@ -12,7 +13,7 @@ const WishItem = ({ item }) => {
         <h5> {item._id} </h5>
         <h6>{item.description}</h6>
         <button className="btn btn-light">
-            <a href={`/books/${item.bookId}`} target="_blank">View</a>
+            <a href={`/books/${item._id}`} target="_blank">View</a>
         </button>
     
         <button className="btn btn-light"> Remove 🗑️</button>

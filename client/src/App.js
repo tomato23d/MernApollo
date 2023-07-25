@@ -16,6 +16,7 @@ import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BookDetail from './components/BookDetail';
+import HelloBook from './components/HelloBook';
 //import WishList from './components/WishList';
 
 const httpLink = createHttpLink({
@@ -77,7 +78,7 @@ function App() {
               />
                <Route 
                 path="/books/:bookId" 
-                element={<BookDetail />} 
+                element={<HelloBook />} 
               />
               {/* <Route 
                 path="/users/:userId/wishlist" 

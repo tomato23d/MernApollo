@@ -8,9 +8,14 @@ const WishItem = ({ item }) => {
   console.log(item);
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
-  const handleRemoveBook = async (item) => {
+  const handleRemoveBook = async (bookId) => {
     try {
-      const response = await removeBook(item._id)
+      console.log("BOOK!!!",bookId)
+      const response = await removeBook(
+        {variables:  {_id: bookId}}
+        
+        
+       )
       
     } catch (err) {
       console.error(err);

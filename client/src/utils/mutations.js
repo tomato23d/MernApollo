@@ -11,8 +11,8 @@ mutation saveBook( $bookData: Bookinput) {
 
 
 export const REMOVE_BOOK = gql`
-mutation removeBook($id: ID!) {
-  removeBook(_id: $id) {
+mutation removeBook($_id: ID!) {
+  removeBook(_id: $_id) {
     _id
   }
 }`;

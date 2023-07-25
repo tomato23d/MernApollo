@@ -11,11 +11,11 @@ mutation saveBook( $bookData: Bookinput) {
 
 
 export const REMOVE_BOOK = gql`
-mutation removeBook($bookId: ID!, ) {
-  removeBook(bookId: $bookId){
-   bookId
+mutation removeBook($id: ID!) {
+  removeBook(_id: $id) {
+    _id
   }
-  }`;
+}`;
 
 export const LOGIN_USER = gql`
 mutation login($email: String!, $password: String!) {

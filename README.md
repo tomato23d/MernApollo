@@ -18,3 +18,7 @@ userbook or mesavedBooks on a server
 ### image storage
 currently saved in a folder with index.js
 
+
+
+## remove bookId
+

@@ -1,90 +1,114 @@
 [
+
     {
-         "bookId": "111122334a",
+         "category": "non-fiction",
+         "authors": ["Jennifer Ackerman"],
+         "description": "The New Science of the World's Most Enigmatic Birds",
+         "title": "What an Owl Knows",
+         "link": "https://www.angusrobertson.com.au/books/what-an-owl-knows-jennifer-ackerman/p/9781922310682"
+ },
+
+ {
+  "category": "non-fiction",
+        "authors": ["Bill Dobbins  ", "Arnold Schwarzenegger"],
+        "description": "The Bible of Bodybuilding, Fully Updated and Revised",
+        "title": "The New Encyclopedia of Modern Bodybuilding",
+        "link": "https://www.angusrobertson.com.au/books/the-new-encyclopedia-of-modern-bodybuilding-bill-dobbins-arnold-schwarzenegger/p/9780684857213"
+},
+
+{
+        "category": "education",
+        "authors": ["Emily Crawford ", "Alison Pert ", "Ben Saul"],
+        "description": "Public International Law offers Australian students a comprehensive and accessible introduction to international law",
+        "title": "Public International Law",
+        "link": "https://www.angusrobertson.com.au/books/public-international-law/p/9781009055888"
+},
+    {
+      "category": "fiction",
         "authors": ["Colleen Hoover"],
         "description": "The darkest thriller of the year",
         "title": "Too Late",
         "link": "https://www.booktopia.com.au/too-late-colleen-hoover/book/9781408729465.html"
       },
       {
-         "bookId": "111122334b",
+        "category": "non-fiction",
         "authors": ["Richard Harris", "Craig Challen"],
         "description": "What we can learn from the world's leading risk-takers",
         "title": "The Art of Risk",
         "link": "https://www.booktopia.com.au/the-art-of-risk-richard-harris/book/9781761106774.html"
       },
       {
-         "bookId": "111122334c",
+        "category": "non-fiction",
         "authors": ["James Halliday"],
         "description": "The bestselling and definite guide to australian wine",
         "title": "Halliday Wine Companion 2024",
         "link": "https://www.booktopia.com.au/halliday-wine-companion-2024-james-halliday/book/9781761450037.html"
       },
       {
-         "bookId": "111122334d",
+        "category": "non-fiction",
         "authors": ["Kate Grenville"],
         "description": "A Biographical Novel",
         "title": "Restless Dolly Maunder",
         "link": "https://www.booktopia.com.au/restless-dolly-maunder-kate-grenville/book/9781922790330.html"
       },
       {
-        "bookId": "111122334e",
+        "category": "education",
         "authors": ["Michael Bowden"],
         "description": "Textbook VCE Units 1-4",
         "title": "Art Making and Exhibiting",
         "link": "https://www.booktopia.com.au/art-making-and-exhibiting-vce-units-1-4-michael-bowden/book/9781009229555.html"
       },
       {
-        "bookId": "111122334f",
+        "category": "non-fiction",
         "authors": ["Tim Rutherford-Johnson"],
         "description": "Oxford Paperback Reference",
         "title": "The Oxford Dictionary of Music",
         "link": "https://www.booktopia.com.au/the-oxford-dictionary-of-music-tim-rutherford-johnson/book/9780199578542.html"
       },
       {
-        "bookId": "111122334g",
+        "category": "fiction",
         "authors": ["Bruce Pascoe"],
         "description": "A Truer History",
         "title": "Young Dark Emu",
         "link": "https://www.booktopia.com.au/young-dark-emu-bruce-pascoe/book/9781925360844.html"
       },
       {
-        "bookId": "111122334h",
+        "category": "fiction",
         "authors": ["Kate Morton"],
         "description": "The new bestseller from the author of The Clockmaker's Daughter",
         "title": "Homecoming",
         "link": "https://www.booktopia.com.au/homecoming-kate-morton/book/9781760630485.html"
       },
       {
-        "bookId": "111122334i",
+        "category": "education",
         "authors": ["Bonnie Garmus"],
         "description": "The No. 1 Sunday Times bestseller and BBC Between the Covers Book Club pick",
         "title": "Lessons in Chemistry",
         "link": "https://www.booktopia.com.au/homecoming-kate-morton/book/9781760630485.html"
       },  
       {
-        "bookId": "111122334j",
+        "category": "education",
         "authors": ["Morgan Housel"],
         "description": "Timeless lessons on wealth, greed, and happiness",
         "title": "The Psychology of Money",
         "link": "https://www.booktopia.com.au/the-psychology-of-money-morgan-housel/book/9780857197689.html"
       },
       {
-        "bookId": "111122334k",
+        "category": "non-fiction",
         "authors": ["Brianna Wiest"],
         "description": "Transforming self-sabotage into self-mastery",
         "title": "The Mountain Is You",
         "link": "https://www.booktopia.com.au/the-mountain-is-you-brianna-wiest/book/9781949759228.html"
       },
       {
-        "bookId": "111122334l",
+        "category": "non-fiction",
         "authors": ["Dr. Mindy Pelz"],
         "description": "A Woman's Guide to Using the Healing Power of Fasting to Burn Fat, Boost Energy, and Balance Hormones",
         "title": "Fast Like a Girl",
         "link": "https://www.booktopia.com.au/fast-like-a-girl-dr-mindy-pelz/book/9781401973698.html"
       },
       {
-        "bookId": "111122334m",
+        "category": "education",
         "authors": ["Peter Attia", "Bill Gifford"],
         "description": "The Science and Art of Longevity",
         "title": "Outlive",

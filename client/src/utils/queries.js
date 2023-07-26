@@ -4,7 +4,7 @@ export const QUERY_BOOKS = gql`
   query getBooks {
     books {
       _id
-      bookId
+      category
       authors
       description
       link
@@ -18,7 +18,7 @@ export const QUERY_SINGLE_BOOK = gql`
   query singleBook($id: ID!) {
     book(id: $id) {
       _id
-      bookId
+      category
       authors
       description
       link
@@ -36,7 +36,7 @@ export const QUERY_ME = gql`
       email
       savedBooks {
         _id
-        bookId
+        category
         authors
         description
         title

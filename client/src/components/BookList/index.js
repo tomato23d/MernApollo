@@ -14,7 +14,7 @@ const handleSaveBook = async (book) => {
       const data = await saveBook({
         variables: { bookData: {
           _id: book._id,
-          bookId: book.bookId ,
+          category: book.category,
           authors: book.authors,
           description: book.description,
           title: book.title,

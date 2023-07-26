@@ -13,7 +13,7 @@ const bookSchema = new Schema({
     required: true,
   },
   // saved book id from GoogleBooks
-  bookId: {
+  category: {
     type: String,
     required: true,
   },

@@ -12,14 +12,11 @@ const Header = () => {
   };
 
 const { loading, data } = useQuery( QUERY_ME );
-
 const profile = data?.me || {};
 
-//console.log(Auth.loggedIn());
 
-// if (loading) {
-//   return <div>Loading...</div>;
-// }
+
+
   return (
     <header className="bg-info text-dark mb-4 py-3 display-flex align-center">
       <div className="container flex-column justify-space-between-lg justify-center align-center text-center">
@@ -52,6 +49,16 @@ const profile = data?.me || {};
           )}
         </div>
       </div>
+      <button className="btn btn-light"
+        //  onClick={() => handleCategorySearch(category)}
+        >Category Education</button>
+      <button className="btn btn-light"
+        //  onClick={() => handleCategorySearch(category)}
+        >Category Fiction</button>
+
+      <button className="btn btn-light"
+        //  onClick={() => handleCategorySearch(category)}
+        >Category Non-Fiction</button>
     </header>
   );
 };

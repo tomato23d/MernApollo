@@ -28,6 +28,22 @@ export const QUERY_SINGLE_BOOK = gql`
   }
 `;
 
+
+export const QUERY_BOOKS_CATEGORY = gql`
+  query booksCategory($category: String!) {
+    booksCategory(category: $category) {
+      _id
+      category
+      authors
+      description
+      link
+      title
+      image
+    }
+  }
+`;
+
+
 export const QUERY_ME = gql`
   {
     me {

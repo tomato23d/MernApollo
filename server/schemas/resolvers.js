@@ -9,6 +9,10 @@ const resolvers = {
         return await Book.find();
     },
 
+    booksCategory: async (parent, { category }) => {
+      return await Book.find({category: category});
+  },
+
     book: async (parent, args) => {
         return await Book.findById(args.id)
     },

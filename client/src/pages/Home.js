@@ -41,6 +41,8 @@ const Home = () => {
 
   return (
     <main>
+      
+      
         <form className = "new-form pl-5"  
               //  onSubmit={handleFormSubmit}
         >
@@ -53,6 +55,7 @@ const Home = () => {
                   />
               </div> 
         </form>
+       
 
         <div className="flex-row justify-center">
               <div className="col-12 col-md-10 my-3">

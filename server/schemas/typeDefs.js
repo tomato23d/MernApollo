@@ -50,6 +50,7 @@ const typeDefs = gql`
   type Query {
     me: User
     books: [Book]!
+    booksCategory(category:String!): [Book]!
     book(id: ID!) : Book
     users: [User]!
     user: User

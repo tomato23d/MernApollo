@@ -16,8 +16,6 @@ import Login from './pages/Login';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BookDetail from './components/BookDetail';
-import HelloBook from './components/HelloBook';
-//import WishList from './components/WishList';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -48,14 +46,11 @@ function App() {
       <Router>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
-          {/* <div className="container"> */}
             <Routes>
-           
               <Route 
                 path="/" 
                 element={<Home />} 
               />
-
               <Route 
                 path="/login" 
                 element={<Login />} 
@@ -76,19 +71,9 @@ function App() {
                 path="/books/:book_id" 
                 element={<BookDetail />} 
               />
-               <Route 
-                path="/users/:userId/:bookId" 
-                element={<HelloBook />} 
-              />
-              {/* <Route 
-                path="/users/:userId/wishlist" 
-                element={<WishList />} 
-              /> */}
-             
             </Routes>
           </div>
           <Footer />
-        {/* </div> */}
       </Router>
     </ApolloProvider>
   );

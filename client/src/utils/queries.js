@@ -43,6 +43,19 @@ export const QUERY_BOOKS_CATEGORY = gql`
   }
 `;
 
+export const QUERY_BOOKS_EDUCATION = gql`
+  query booksEducation {
+    booksEducation {
+      _id
+      category
+      authors
+      description
+      link
+      title
+      image
+    }
+  }
+`;
 
 export const QUERY_ME = gql`
   {
@@ -87,3 +100,30 @@ export const QUERY_USER = gql`
   }
 `;
 
+export const QUERY_BOOKS_FICTION = gql`
+  query booksFiction {
+    booksFiction {
+      _id
+      category
+      authors
+      description
+      link
+      title
+      image
+    }
+  }
+`;
+
+export const QUERY_BOOKS_NONFICTION = gql`
+  query booksNonFiction {
+    booksNonFiction {
+      _id
+      category
+      authors
+      description
+      link
+      title
+      image
+    }
+  }
+`;

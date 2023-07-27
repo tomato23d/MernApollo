@@ -51,6 +51,9 @@ const typeDefs = gql`
     me: User
     books: [Book]!
     booksCategory(category:String!): [Book]!
+    booksEducation: [Book]!
+    booksFiction: [Book]!
+    booksNonFiction: [Book]!
     book(id: ID!) : Book
     users: [User]!
     user: User

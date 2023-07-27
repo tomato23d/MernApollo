@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
-import { QUERY_ME } from '../utils/queries';
+import { QUERY_ME, QUERY_BOOKS_CATEGORY } from '../utils/queries';
 
 const Header = () => {
   const logout = (event) => {
@@ -13,9 +12,6 @@ const Header = () => {
 
 const { loading, data } = useQuery( QUERY_ME );
 const profile = data?.me || {};
-
-
-
 
   return (
     <header className="bg-info text-dark mb-4 py-3 display-flex align-center">
@@ -49,16 +45,6 @@ const profile = data?.me || {};
           )}
         </div>
       </div>
-      <button className="btn btn-light"
-        //  onClick={() => handleCategorySearch(category)}
-        >Category Education</button>
-      <button className="btn btn-light"
-        //  onClick={() => handleCategorySearch(category)}
-        >Category Fiction</button>
-
-      <button className="btn btn-light"
-        //  onClick={() => handleCategorySearch(category)}
-        >Category Non-Fiction</button>
     </header>
   );
 };

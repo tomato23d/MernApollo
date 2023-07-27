@@ -11,7 +11,7 @@ const Welcome = () => {
 
   const { loading: loadingMe, data: dataMe } = useQuery(QUERY_ME);
   const mySavedBooks = dataMe?.me.savedBooks || [];
-  // console.log(mySavedBooks);
+  console.log(mySavedBooks);
 
   const renderWishList = mySavedBooks.map((item) =>{
       return <WishItemLine key={item._id} item={item}/>;

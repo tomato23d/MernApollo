@@ -6,6 +6,7 @@ import { SAVE_BOOK } from '../../utils/mutations';
 import { useQuery, useMutation } from '@apollo/client';
 
 const BookList = ({ books, title }) => {
+  console.log(books);
 const [saveBook, { error }] = useMutation(SAVE_BOOK);
   
 const handleSaveBook = async (book) => {

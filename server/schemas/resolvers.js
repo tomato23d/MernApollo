@@ -13,6 +13,19 @@ const resolvers = {
       return await Book.find({category: category});
   },
 
+    booksEducation: async () => {
+    return await Book.find({category: 'education'});
+},
+
+    booksFiction: async () => {
+    return await Book.find({category: 'fiction'});
+},
+
+    booksNonFiction: async () => {
+    return await Book.find({category: 'non-fiction'});
+},
+
+
     book: async (parent, args) => {
         return await Book.findById(args.id)
     },

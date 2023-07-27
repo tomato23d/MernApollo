@@ -52,31 +52,33 @@ const handleCategory = (tab) => setCurrentTab(tab);
 
   return (
     <main>
-      <div className="nav nav-tabs">
-     
-        <a className="nav-item" style={{ padding: '1.0rem'}}
+  
+     <div>
+      
+        <a style={{ padding: '1.0rem'}}
           href="#all"
           onClick={() => handleCategory('All')}
       
         >
           All Categories
         </a>
+        <a style={{ padding: '1.0rem'}}
      
-        <a className="nav-item" style={{ padding: '1.0rem'}}
           href="#education"
           onClick={() => handleCategory('Education')} 
      
         >
           Education
         </a>
-    
-      <a className="nav-item" style={{ padding: '1.0rem'}}
+        <a style={{ padding: '1.0rem'}}
+   
           href="#fiction"
           onClick={() => handleCategory('Fiction')} 
         >
           Fiction
         </a>
-        <a className="nav-item" style={{ padding: '1.0rem'}}
+        <a style={{ padding: '1.0rem'}}
+      
           href="#non-fiction"
           onClick={() => handleCategory('NonFiction')} 
         >
@@ -87,10 +89,10 @@ const handleCategory = (tab) => setCurrentTab(tab);
       
 
         <div className="flex-row justify-center">
-              <div className="col-12 col-md-10 my-3">
+             
               {renderTab()}
            </div>
-        </div>
+     
     </main>
   );
 };

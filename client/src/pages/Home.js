@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
 import { useQuery } from '@apollo/client';
-
 import BookList from '../components/BookList';
 import { QUERY_BOOKS, QUERY_BOOKS_EDUCATION, QUERY_BOOKS_FICTION, QUERY_BOOKS_NONFICTION } from '../utils/queries';
 
@@ -14,13 +13,13 @@ const { loading: loadingEducation, data: dataEducation } = useQuery(QUERY_BOOKS_
 const booksEducation = dataEducation?.booksEducation || [];
  console.log("education", booksEducation);
 
- const { loading: loadingFiction, data: dataFiction } = useQuery(QUERY_BOOKS_FICTION);
- const booksFiction = dataFiction?.booksFiction || [];
+const { loading: loadingFiction, data: dataFiction } = useQuery(QUERY_BOOKS_FICTION);
+const booksFiction = dataFiction?.booksFiction || [];
 
- const { loading: loadingNonFiction, data: dataNonFiction } = useQuery(QUERY_BOOKS_NONFICTION);
+const { loading: loadingNonFiction, data: dataNonFiction } = useQuery(QUERY_BOOKS_NONFICTION);
 const booksNonFiction = dataNonFiction?.booksNonFiction || [];
  
- const [currentTab, setCurrentTab] = useState('All');
+const [currentTab, setCurrentTab] = useState('All');
 
  const renderTab = () => {
   if (currentTab === 'All') {
